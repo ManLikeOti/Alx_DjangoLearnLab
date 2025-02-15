@@ -1,0 +1,1 @@
+All CRUD operations performed successfully in django shell
