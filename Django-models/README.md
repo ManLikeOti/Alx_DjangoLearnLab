@@ -1,1 +1,0 @@
-Creating a Django project
