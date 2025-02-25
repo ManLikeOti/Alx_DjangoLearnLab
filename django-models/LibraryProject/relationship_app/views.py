@@ -44,17 +44,17 @@ def is_member(user):
 
 # Admin view
 @user_passes_test(is_admin)
-def Admin_view(request):
+def admin_view(request):
     return render(request, "relationship_app/admin_view.html")  # Ensure this path is present
 
 # Librarian view
 @user_passes_test(is_librarian)
-def Librarian_view(request):
+def librarian_view(request):
     return render(request, "relationship_app/librarian_view.html")  # Ensure this path is present
 
 # Member view
 @user_passes_test(is_member)
-def Member_view(request):
+def member_view(request):
     return render(request, "relationship_app/member_view.html")  # Ensure this path is present
 
 # View to add a book
